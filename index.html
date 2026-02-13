@@ -16,6 +16,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ALL-METAL — Профессиональные изделия из металла</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNiIgZmlsbD0iI2ZmNTcyMiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBkeT0iLjM1ZW0iIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IndoaXRlIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjkwMCIgZm9udC1zaXplPSIyMiI+QTwvdGV4dD48L3N2Zz4=">
 
     <!-- Preload критических ресурсов -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
@@ -1273,7 +1274,7 @@ document.addEventListener("DOMContentLoaded", () => {
 </section>
 
 <!-- ══════════ LEAD FORM ══════════ -->
-<section class="relative py-24 lg:py-32 bg-[#0a0a0a] overflow-hidden font-sans">
+<section id="lead-form" class="relative py-24 lg:py-32 bg-[#0a0a0a] overflow-hidden font-sans">
 
     <div class="absolute inset-0 pointer-events-none">
         <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/dark-matter.png')] opacity-40"></div>
@@ -1327,71 +1328,71 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="relative">
                 <div class="absolute inset-0 bg-gradient-to-tr from-[#fc5521]/20 to-transparent rounded-[2rem] blur-xl transform translate-x-2 translate-y-2"></div>
 
-                <form id="calcForm" action="#" class="relative bg-[#121212]/90 backdrop-blur-xl border border-white/10 rounded-[2rem] p-8 lg:p-10 shadow-2xl overflow-hidden">
+             <form id="calcForm" action="#" class="relative bg-[#121212]/90 backdrop-blur-xl border border-white/10 rounded-[2rem] p-8 lg:p-10 shadow-2xl overflow-hidden">
 
-                    <div class="flex justify-between items-start mb-8 border-b border-white/10 pb-6">
-                        <div>
-                            <h3 class="text-2xl font-bold text-white">Заявка на расчёт</h3>
-                            <p class="text-sm text-gray-400 mt-1 font-mono">ID: <span class="text-[#fc5521]">REQ-2026</span></p>
-                        </div>
-                        <div class="w-12 h-12 bg-[#fc5521]/10 rounded-full flex items-center justify-center text-[#fc5521]">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
-                        </div>
-                    </div>
+    <div class="flex justify-between items-start mb-8 border-b border-white/10 pb-6">
+        <div>
+            <h3 class="text-2xl font-bold text-white">Заявка на расчёт</h3>
+            <p class="text-sm text-gray-400 mt-1 font-mono">ID: <span class="text-[#fc5521]">REQ-2026</span></p>
+        </div>
+        <div class="w-12 h-12 bg-[#fc5521]/10 rounded-full flex items-center justify-center text-[#fc5521]">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+        </div>
+    </div>
 
-                    <div class="space-y-6">
-                        <div class="grid grid-cols-2 gap-3">
-                            <label class="cursor-pointer">
-                                <input type="radio" name="type" value="fence" class="peer sr-only" checked>
-                                <div class="px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-center text-sm text-gray-300 peer-checked:bg-[#fc5521] peer-checked:text-white peer-checked:border-[#fc5521] transition-all hover:bg-white/10">
-                                    Забор
-                                </div>
-                            </label>
-                            <label class="cursor-pointer">
-                                <input type="radio" name="type" value="gate" class="peer sr-only">
-                                <div class="px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-center text-sm text-gray-300 peer-checked:bg-[#fc5521] peer-checked:text-white peer-checked:border-[#fc5521] transition-all hover:bg-white/10">
-                                    Ворота
-                                </div>
-                            </label>
-                            <label class="cursor-pointer">
-                                <input type="radio" name="type" value="canopy" class="peer sr-only">
-                                <div class="px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-center text-sm text-gray-300 peer-checked:bg-[#fc5521] peer-checked:text-white peer-checked:border-[#fc5521] transition-all hover:bg-white/10">
-                                    Навес
-                                </div>
-                            </label>
-                            <label class="cursor-pointer">
-                                <input type="radio" name="type" value="other" class="peer sr-only">
-                                <div class="px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-center text-sm text-gray-300 peer-checked:bg-[#fc5521] peer-checked:text-white peer-checked:border-[#fc5521] transition-all hover:bg-white/10">
-                                    Другое
-                                </div>
-                            </label>
-                        </div>
+    <div class="space-y-6">
+        <div class="grid grid-cols-2 gap-3">
+            <label class="cursor-pointer">
+                <input type="radio" name="type" value="fence" class="peer sr-only" checked>
+                <div class="px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-center text-sm text-gray-300 peer-checked:bg-[#fc5521] peer-checked:text-white peer-checked:border-[#fc5521] transition-all hover:bg-white/10">
+                    Забор
+                </div>
+            </label>
+            <label class="cursor-pointer">
+                <input type="radio" name="type" value="gate" class="peer sr-only">
+                <div class="px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-center text-sm text-gray-300 peer-checked:bg-[#fc5521] peer-checked:text-white peer-checked:border-[#fc5521] transition-all hover:bg-white/10">
+                    Ворота
+                </div>
+            </label>
+            <label class="cursor-pointer">
+                <input type="radio" name="type" value="canopy" class="peer sr-only">
+                <div class="px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-center text-sm text-gray-300 peer-checked:bg-[#fc5521] peer-checked:text-white peer-checked:border-[#fc5521] transition-all hover:bg-white/10">
+                    Навес
+                </div>
+            </label>
+            <label class="cursor-pointer">
+                <input type="radio" name="type" value="other" class="peer sr-only">
+                <div class="px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-center text-sm text-gray-300 peer-checked:bg-[#fc5521] peer-checked:text-white peer-checked:border-[#fc5521] transition-all hover:bg-white/10">
+                    Другое
+                </div>
+            </label>
+        </div>
 
-                        <div class="space-y-4">
-                            <div class="relative group">
-                                <input type="text" required placeholder=" " class="block px-5 py-4 w-full text-white bg-black/30 rounded-xl border border-white/10 appearance-none focus:outline-none focus:ring-1 focus:ring-[#fc5521] focus:border-[#fc5521] peer transition-all" />
-                                <label class="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-[#121212] px-2 peer-focus:px-2 peer-focus:text-[#fc5521] peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-4 pointer-events-none rounded">Ваше имя</label>
-                            </div>
-                            <div class="relative group">
-                                <input type="tel" id="phone" required placeholder=" " class="block px-5 py-4 w-full text-white bg-black/30 rounded-xl border border-white/10 appearance-none focus:outline-none focus:ring-1 focus:ring-[#fc5521] focus:border-[#fc5521] peer transition-all" />
-                                <label class="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-[#121212] px-2 peer-focus:px-2 peer-focus:text-[#fc5521] peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-4 pointer-events-none rounded">Телефон (+375...)</label>
-                            </div>
-                        </div>
+        <div class="space-y-4">
+            <div class="relative group">
+                <input type="text" name="name" required placeholder=" " class="block px-5 py-4 w-full text-white bg-black/30 rounded-xl border border-white/10 appearance-none focus:outline-none focus:ring-1 focus:ring-[#fc5521] focus:border-[#fc5521] peer transition-all" />
+                <label class="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-[#121212] px-2 peer-focus:px-2 peer-focus:text-[#fc5521] peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-4 pointer-events-none rounded">Ваше имя</label>
+            </div>
+            <div class="relative group">
+                <input type="tel" id="phone" name="phone" required placeholder=" " class="block px-5 py-4 w-full text-white bg-black/30 rounded-xl border border-white/10 appearance-none focus:outline-none focus:ring-1 focus:ring-[#fc5521] focus:border-[#fc5521] peer transition-all" />
+                <label class="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-[#121212] px-2 peer-focus:px-2 peer-focus:text-[#fc5521] peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-4 pointer-events-none rounded">Телефон (+375...)</label>
+            </div>
+        </div>
 
-                        <button class="relative w-full group">
-                            <div class="absolute -inset-0.5 bg-gradient-to-r from-[#fc5521] to-[#ff8c61] rounded-xl blur opacity-30 group-hover:opacity-100 transition duration-200"></div>
+        <button type="submit" id="submitBtn" class="relative w-full group mt-2">
+            <div class="absolute -inset-0.5 bg-gradient-to-r from-[#fc5521] to-[#ff8c61] rounded-xl blur opacity-30 group-hover:opacity-100 transition duration-200"></div>
 
-                            <div class="relative w-full bg-[#fc5521] hover:bg-[#ff6b3d] rounded-xl py-4 px-6 flex items-center justify-center gap-3 transition-all duration-200 transform group-hover:-translate-y-0.5 group-active:translate-y-0">
-                                <span class="text-white font-bold text-lg tracking-wide">Получить расчёт</span>
-                                <svg class="w-5 h-5 text-white animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                            </div>
-                        </button>
+            <div class="relative w-full bg-[#fc5521] hover:bg-[#ff6b3d] rounded-xl py-4 px-6 flex items-center justify-center gap-3 transition-all duration-200 transform group-hover:-translate-y-0.5 group-active:translate-y-0">
+                <span class="btn-text text-white font-bold text-lg tracking-wide">Получить расчёт</span>
+                <svg class="w-5 h-5 text-white animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </div>
+        </button>
 
-                        <p class="text-center text-xs text-gray-500 mt-4">
-                            Нажимая кнопку, вы соглашаетесь с <a href="#" class="text-gray-400 underline hover:text-[#fc5521]">политикой конфиденциальности</a>
-                        </p>
-                    </div>
-                </form>
+        <p class="text-center text-xs text-gray-500 mt-4">
+            Нажимая кнопку, вы соглашаетесь с <a href="#" class="text-gray-400 underline hover:text-[#fc5521]">политикой конфиденциальности</a>
+        </p>
+    </div>
+</form>
             </div>
         </div>
     </div>
@@ -1657,6 +1658,76 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 })();
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+    // ВСТАВЬ СЮДА СВОЮ ССЫЛКУ ИЗ GOOGLE APPS SCRIPT
+    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzgdjD2MY_-hLsaO2zNHs92Z0246SCli6UmR1reBplnMnL78Y6PzId1A--4ClJS3TtUew/exec";
+
+    // Маска телефона
+    const phoneInput = document.getElementById('phone');
+    if (phoneInput) {
+        phoneInput.addEventListener('input', (e) => {
+            let x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,2})(\d{0,3})(\d{0,2})(\d{0,2})/);
+            if (!x) return;
+            e.target.value = !x[2] ? '+' + x[1] : '+' + x[1] + ' (' + x[2] + (x[3] ? ') ' + x[3] : '') + (x[4] ? '-' + x[4] : '') + (x[5] ? '-' + x[5] : '');
+        });
+    }
+
+    // Отправка формы
+    const form = document.getElementById('calcForm');
+    const submitBtn = document.getElementById('submitBtn');
+
+    if (form && submitBtn) {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault(); // Останавливаем стандартную отправку
+
+            const btnText = submitBtn.querySelector('.btn-text');
+            const originalText = btnText ? btnText.innerText : 'Получить расчёт';
+            const btnBg = submitBtn.querySelector('div.relative');
+
+            // 1. Меняем кнопку на "Отправка..."
+            if(btnText) btnText.innerText = 'Отправка...';
+            submitBtn.disabled = true;
+            submitBtn.style.opacity = '0.7';
+
+            // 2. Отправляем данные
+            fetch(SCRIPT_URL, {
+                method: 'POST',
+                body: new FormData(form),
+                mode: 'no-cors' // Важно для Google Script
+            })
+            .then(() => {
+                // 3. Успех
+                if(btnText) btnText.innerText = 'Заявка принята!';
+                if(btnBg) btnBg.style.background = '#22c55e'; // Зеленый цвет
+
+                form.reset(); // Очищаем форму
+
+                // Через 4 секунды возвращаем кнопку как было
+                setTimeout(() => {
+                    if(btnText) btnText.innerText = originalText;
+                    submitBtn.disabled = false;
+                    submitBtn.style.opacity = '1';
+                    if(btnBg) btnBg.style.background = '';
+                }, 4000);
+            })
+            .catch(error => {
+                // Ошибка
+                console.error('Ошибка:', error);
+                if(btnText) btnText.innerText = 'Ошибка, звоните!';
+
+                setTimeout(() => {
+                    if(btnText) btnText.innerText = originalText;
+                    submitBtn.disabled = false;
+                    submitBtn.style.opacity = '1';
+                }, 4000);
+            });
+        });
+    }
+});
 </script>
 
 </body>
